@@ -160,7 +160,8 @@ h1{
 }
 
 button {
-  padding: 0.5em;
+  padding: 15px;
+  padding-inline: 30px;
   border-radius: 50px;
   border: 1px solid var(--tertiaty-color);
   color: var(--primary-color);
@@ -268,26 +269,79 @@ h3 {
 /*--------------------------
 Contact Us Page
 --------------------------*/
-input {
-  border: 1px solid #ddd;
-}
-input[type="submit"] {
-  background: #333;
-  color: #fff;
-  border: none;
-  width: 70px;
-}
-input,
-textarea,
-select,
-button {
-  width: 150px;
-  margin: 0;
-  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
-  -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
-  box-sizing: border-box;
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
 }
 
+.form-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(21, 249, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin: 10px 0 5px;
+  color: var(--primary-color);
+}
+
+input, textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.form-container button {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+/*--------------------------
+404 Page
+--------------------------*/
+.error-container {
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 55vh;
+}
+
+.error-title {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.error-container a {
+  padding: 15px;
+  padding-inline: 30px;
+  border-radius: 50px;
+  border: 1px solid var(--tertiaty-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.error-container a:hover {
+  background-color: var(--tertiary-color);
+}
 
 /*--------------------------
 Smartphone
