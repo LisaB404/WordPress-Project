@@ -306,9 +306,17 @@ textarea {
   height: 150px;
 }
 
-.form-container button {
-  margin-top: 10px;
-  margin-right: 10px;
+.wpcf7-submit {
+  padding: 15px;
+  border-radius: 50px;
+  border: 1px solid var(--tertiaty-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wpcf7-submit:hover {
+  background-color: var(--tertiary-color);
 }
 
 /*--------------------------
